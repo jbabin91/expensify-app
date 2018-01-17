@@ -1,8 +1,10 @@
 const path = require('path');
+const Jarvis = require('webpack-jarvis');
 
 module.exports = {
+  plugins: [new Jarvis()],
   // entry: './src/app.js',
-  entry: './src/playground/redux-101.js',
+  entry: './src/playground/destructuring.js',
   output: {
     filename: 'bundle.js',
     path: path.join(__dirname, 'public'),
