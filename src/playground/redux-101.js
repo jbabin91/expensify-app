@@ -4,21 +4,21 @@ import { createStore } from 'redux';
 
 const incrementCount = ({ incrementBy = 1 } = {}) => ({
   type: 'INCREMENT',
-  incrementBy
+  incrementBy,
 });
 
 const decrementCount = ({ decrementBy = 1 } = {}) => ({
   type: 'INCREMENT',
-  decrementBy
+  decrementBy,
 });
 
 const setCount = ({ count } = {}) => ({
   type: 'SET',
-  count
+  count,
 });
 
 const resetCount = () => ({
-  type: 'RESET'
+  type: 'RESET',
 });
 
 // Reducers
@@ -33,19 +33,19 @@ const countReducer = (state = { count: 0 }, action) => {
   switch (action.type) {
     case 'INCREMENT':
       return {
-        count: state.count + incrementBy
+        count: state.count + incrementBy,
       };
     case 'DECREMENT':
       return {
-        count: state.count - decrementBy
+        count: state.count - decrementBy,
       };
     case 'SET':
       return {
-        count: action.count
+        count: action.count,
       };
     case 'RESET':
       return {
-        count: 0
+        count: 0,
       };
     default:
       return state;

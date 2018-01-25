@@ -5,18 +5,18 @@ module.exports = {
       'error',
       {
         components: ['Link'],
-        specialLink: ['to']
-      }
+        specialLink: ['to'],
+      },
     ],
     'react/jsx-filename-extension': [
       1,
       {
-        extensions: ['.js', '.jxs']
-      }
+        extensions: ['.js', '.jxs'],
+      },
     ],
-    'react/prop-types': [0]
+    'react/prop-types': [0],
   },
   globals: {
-    document: true
-  }
+    document: true,
+  },
 };
