@@ -3,8 +3,7 @@ const Jarvis = require('webpack-jarvis');
 
 module.exports = {
   plugins: [new Jarvis()],
-  // entry: './src/app.js',
-  entry: './src/app.js',
+  entry: './src/playground/hoc.js',
   output: {
     filename: 'bundle.js',
     path: path.join(__dirname, 'public'),
